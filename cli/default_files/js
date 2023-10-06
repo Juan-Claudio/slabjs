@@ -1,0 +1,18 @@
+import Slab from "../../../../libs/slabjs_new/Slab_new.js";
+import slabNameEvents from "./slabName.events.js";
+import slabNameHtml from "./slabName.html.js";
+import slabNameStyle from "./slabName.style.js";
+
+const slabName = new Slab(slabNameHtml, slabNameStyle, slabNameEvents);
+
+slabName.new_data_model(
+    
+    class SlabName_model{
+        constructor(data)
+        {
+            this.data = data;
+        }
+    }
+);
+
+export default slabName;
